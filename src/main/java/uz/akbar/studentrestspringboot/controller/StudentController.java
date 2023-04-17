@@ -1,6 +1,5 @@
 package uz.akbar.studentrestspringboot.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import uz.akbar.studentrestspringboot.entity.Student;
 import uz.akbar.studentrestspringboot.service.StudentService;
@@ -10,9 +9,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/student")
 public class StudentController {
+    
     private final StudentService studentService;
 
-    @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }

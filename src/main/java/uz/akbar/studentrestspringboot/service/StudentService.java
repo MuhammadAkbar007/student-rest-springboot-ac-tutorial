@@ -1,6 +1,5 @@
 package uz.akbar.studentrestspringboot.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import uz.akbar.studentrestspringboot.entity.Student;
@@ -15,7 +14,6 @@ public class StudentService {
 
     private final StudentRepository studentRepository;
 
-    @Autowired
     public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
